@@ -11,6 +11,14 @@ jobs:
     build-job:
         runs-on: ubuntu-latest
         steps:
-            - run:  echo "Hello world"
-            - run:  echo "Hello world 2"
-            - run:  echo "Hello world 3"
+            - run:  echo "Build job"
+           
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Test job"
+
+    deploy-job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Deploy job"
