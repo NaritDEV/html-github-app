@@ -13,9 +13,11 @@ env:
 jobs:
     build-job:
         runs-on: ubuntu-latest
+        env:
+            FULLNAME: 'Narit'
         steps:
-            - run:  echo "Hello $HOST"
-            - run:  echo "Hello ${{github.actor}}"
+            - run:  echo "Hello $HOST $FULLNAME"
+            - run:  echo "Hello ${{github.actor}} ${{vars.COMPANY_NAME}}"
            
     test-job:
         runs-on: ubuntu-latest
