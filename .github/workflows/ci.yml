@@ -11,7 +11,7 @@ jobs:
     build-job:
         runs-on: ubuntu-latest
         steps:
-            - run:  echo "Hello ${{github.actor}}
+            - run:  echo "Hello ${{github.actor}}"
            
     test-job:
         runs-on: ubuntu-latest
